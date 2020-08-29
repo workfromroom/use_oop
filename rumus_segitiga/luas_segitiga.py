@@ -6,7 +6,7 @@ class LuasSegitiga():
         self.tinggi = tinggi
 
     def info(self):
-        print("Ini adalah object dari segitiga dengan alas=",{self.alas},"dan tinggi=",{self.tinggi})
+        return f"Ini adalah object dari segitiga dengan alas={self.alas} dan tinggi={self.tinggi}"
 
     def hitung_luas(self):
         return self.alas * self.tinggi / 2
