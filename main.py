@@ -1,15 +1,17 @@
-from rumus_segitiga.luas_segitiga import LuasSegitiga
-from rumus_segitiga.keliling_segitiga import KelilingSegitiga
+from geometri.segitiga import Segitiga
+from geometri.persegi_panjang import PersegiPanjang
+from geometri.bangun_ruang import BangunRuang
 
-print("Belajar Menggunakan OOP")
-print("-" * 59)
+print("Menggunakan OOP")
+p1 = PersegiPanjang(11,7)
+print(p1.info())
+print(p1.hitung_luas())
 
-l = LuasSegitiga(11,9)
-print(l.info())
-print("Luas Segitiga adalah",l.hitung_luas())
+s1 = Segitiga(11, 7)
+print(s1.info())
+print(s1.hitung_luas())
 
-print()
-
-s = KelilingSegitiga(11)
-print(s.info())
-print("Keliling Segitiga adalah",s.hitung_keliling())
+print("Membuat Object dari kelas BangunRuang")
+b1 = BangunRuang()
+print(b1.info())
+print(b1.hitung_luas())
